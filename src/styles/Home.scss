@@ -127,6 +127,56 @@
     justify-content: flex-end;
 
     > div{
-        
+        background-color: $third;
+        border-radius: 200px 0 0 200px;
+        height : 70vh;
+        width: 70%;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        > h1 {
+            color: $first;
+            border-bottom: 2px solid $first;
+            text-transform: uppercase;
+            width: 140px;
+            padding: 0.5 rem;      
+        }
+
+        > article{
+            display: flex;
+            margin: 2rem 0;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            > div{
+                animation: imgUp 0.7s linear infinite alternate;
+               background-color: $first;
+               height: 10rem;
+               width: 10rem;
+               border-radius: 50%;
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               flex-direction: column;
+               margin: 1rem;
+               color: $dark;
+               cursor: pointer;
+               transition: all 0.5s;
+               &:hover{
+                filter: invert(1);
+               }
+
+               svg{
+                font-size: 4rem;;
+               }
+
+               p{
+                font: 900 1.2rem $text2
+               }
+            }
+        }
     }
 }
